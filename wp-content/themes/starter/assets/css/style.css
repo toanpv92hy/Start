@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'VNF-Futura-Regular';
+  src: url('fonts/VNF-Futura-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	color: #ccc;
+	/*background: url('../../images/background.png') repeat-y fixed #000000;
+	background-position: center center;*/
+	background-color: white;
+	font-family: 'Roboto Condensed';
+}
+body *{
+	font-family: 'Roboto Condensed';
+}
+.content{
+	margin: 0 auto;
+	float: none;
+}
+.carousel-inner{
+	max-height: 400px;
+}
+
