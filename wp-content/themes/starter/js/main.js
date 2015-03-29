@@ -1,3 +1,3 @@
 jQuery(document).ready(function(){
-	console.log('hello world !');
+	jQuery("#container").addClass("col-lg-10 center");
 });

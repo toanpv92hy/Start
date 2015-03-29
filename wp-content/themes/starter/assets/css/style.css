@@ -27,6 +27,7 @@ body *{
 .center{
 	float: none;
 	margin: auto;
+    clear: both;
 }
 .none-padding{
     padding: 0;
