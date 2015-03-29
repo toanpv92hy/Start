@@ -14,11 +14,285 @@ body {
 body *{
 	font-family: 'Roboto Condensed';
 }
+.top-menu{
+	background: none repeat scroll 0 0 #222;
+    color: #3a3a3a;
+    position: relative;
+    z-index: 200;
+    font-family: 'Roboto Condensed';
+    height: 40px;
+    line-height: 40px;
+}
+
+.center{
+	float: none;
+	margin: auto;
+}
+.none-padding{
+    padding: 0;
+}
+.none-margin{
+    margin: 0;
+}
+.top-menu nav > li{
+	display: inline-block;
+    font-size: 12px;
+    list-style: outside none none;
+    position: relative;
+}
+.single-entry{
+	font-family: 'Roboto Condensed';
+	list-style: none;
+	color: #959595;
+}
+.single-entry a{
+	color: #959595;
+    display: inline-block;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+}
+.top-menu .right-align nav{
+	float: right;
+}
+.top-menu nav > li::after{
+	background: none repeat scroll 0 0 #3a3a3a;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px;
+    position: relative;
+    width: 1px;
+}
+.top-menu nav > li a{
+	color: #959595;
+    display: inline-block;
+    padding: 0;
+    text-transform: uppercase;
+}
+.menu-nav{
+    height: 70px;
+    line-height: 70px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.logo{
+    float: left;
+}
+.menu-nav .navbar{
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    border: 0;
+}
+.navbar-collapse{
+    background-color: white;
+}
+.menu-nav .navbar #menu-menu-home,.menu-nav .navbar #menu-menu-home li,.menu-nav .navbar #menu-menu-home li a{
+    height: 70px;
+    line-height: 70px;
+}
+.menu-nav .navbar #menu-menu-home li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 40px;
+}
+.header-links{
+    float: right;
+}
+.header-links ul li{
+    display: inline-block;
+    list-style: none;
+    line-height: 85px;
+}
 .content{
 	margin: 0 auto;
 	float: none;
+	clear: both;
+	padding: 0;
 }
 .carousel-inner{
 	max-height: 400px;
 }
+.hone-title-wrapper{
+    margin-bottom: 35px;
+    padding:0;
+}
+.hone-title-wrapper h2,.hone-title-wrapper h2  small{
+    float: left;
+    width: 100%;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+}
+.hone-title-wrapper h2  small{
+    color: #888;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.hone-title-wrapper .dash{
+    background-color: #222;
+    display: inline-block;
+    height: 2px;
+    margin-top: 0;
+    position: relative;
+    width: 16px;
+}
+.owl-item{
+    backface-visibility: hidden;
+    transform: translate3d(0px, 0px, 0px);
+    float: left;
+    padding-left: 0;
+    padding-right: 30px;
+}
+.owl-item img{
+    max-width: 100%;
+}
+.product{
+    margin:0;
+    position: relative;
+}
+.onsale{
+    backface-visibility: hidden;
+    background: none repeat scroll 0 0 padding-box #222;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    position: absolute;
+    right: -20px;
+    text-align: center;
+    text-transform: uppercase;
+    top: -20px;
+    width: 60px;
+    z-index: 50;
+}
+.onsale.featured{
+    background-color: #7b599b;
+    font-size: 11px;
+}
+.item-info{
+    display: block;
+    padding: 2px 20px;
+    position: relative;
+    color: black;
+}
+.item-info h3{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 15px 5px 0;
+    color: black;
+}
+.item-info h3 a{
+    color: black;
+    text-decoration: none;
+}
+.add-to-cart{
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    top: 35px;
+}
+.add-to-cart::before{
+    color: #222;
+    content: "+";
+    display: block;
+    font-family: EntypoRegular;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 0;
+    margin-right: 10px;
+    position: relative;
+    transform: rotate(0deg);
+    transform-origin: 50% 50% 0;
+    transition-duration: 300ms;
+}
+.add-to-cart::after{
+    background: url("http://themes.laborator.co/aurum/fashion/wp-content/themes/aurum/assets/images/check.png") no-repeat scroll center center / 16px auto rgba(0, 0, 0, 0);
+    color: #0fbd71;
+    content: "";
+    display: block;
+    font-family: EntypoRegular;
+    height: 16px;
+    margin-right: 10px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: -8px;
+    width: 16px;
+}
+.item-info span{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.item-info span a{
+    color: #888;
+    font-size: 13px;
+}
+.site-footer{
+    float: left;
+    background: none repeat scroll 0 0 #222;
+    color: #888;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 40px 0;
+    font-family: "Roboto Condensed",sans-serif;
+    margin-top: 30px;
+}
+.footer-bottom{
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding: 40px 0 0;
+    border-color: #3a3a3a;
+}
+.site-footer.inverted .footer-menu{
+    color: #3a3a3a;
+}
+.site-footer.inverted .footer-menu ul{
+    margin: 0;
+    padding: 0;
+}
+.site-footer.inverted .footer-menu ul li::after{
+    background: none repeat scroll 0 0 #3a3a3a;
+}
+.site-footer.inverted .footer-menu ul li::after{
+    background: none repeat scroll 0 0 #ccc;
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px;
+    width: 1px;
+}
+.site-footer.inverted .footer-menu ul li{
+    display: inline-block;
+    list-style: outside none none;
+    border-right: 1px solid;
+    display: inline-block;
+    list-style: outside none none;
+    padding-right: 10px;
+}
+.site-footer.inverted .footer-menu ul li:last-child{
+    border: 0;
+}
+.site-footer.inverted .footer-menu ul li a{
+    color: #959595;
 
+}
+.site-footer.inverted .footer-menu ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+.site-footer .payment-methods{
+     list-style: outside none none;
+
+}
+.site-footer .payment-methods li{
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+}

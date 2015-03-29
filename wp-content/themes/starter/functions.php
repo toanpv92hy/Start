@@ -215,6 +215,8 @@ function mint_theme_scripts_styles() {
     wp_enqueue_style( 'bootstrap-css', get_stylesheet_directory_uri().'/assets/css/bootstrap.css');
 
     wp_enqueue_style( 'style-css', get_stylesheet_directory_uri().'/assets/css/style.css');
+    
+    wp_enqueue_style( 'awesome', get_stylesheet_directory_uri().'/assets/css/font-awesome.min.css');
 
     wp_enqueue_style( 'theme-style', get_stylesheet_uri(), array(), '2015-03-26' );
 
